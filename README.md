@@ -18,7 +18,7 @@ Add it in your root build.gradle at the end of repositories:
 
   ```groovy
     dependencies {
-      implementation 'com.zamplia:zampsdk:1.0.1'
+      implementation 'com.zamplia:zampsdk:1.0.5'
       ...
      }
   ```
