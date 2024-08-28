@@ -169,7 +169,9 @@ We have the following listeners. To use this you have to implement ZampliaCallba
   ```
 
 
-8. We will notify when user gets complete the survey. We will send here SurveyData as well where ID and reward value you will receive.
+8. We will notify when user gets complete the survey. We will send here SurveyData as well where ID and reward value you will receive. You can get reward points by calling surveyInfo.getCpi() in this you will get a decimal number in USD currency. for example 1.5 cpi = 1.5 USD.
+You can just convert it to points as you've asked. for example 1.5 * 100 = 150 points.
+
 
   ```groovy
     public class MainActivity extends AppCompatActivity implements ZampliaCallbacks {
