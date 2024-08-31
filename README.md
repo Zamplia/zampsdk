@@ -18,7 +18,7 @@ Add it in your root build.gradle at the end of repositories:
 
   ```groovy
     dependencies {
-      implementation 'com.zamplia:zampsdk:1.0.5'
+      implementation 'com.zamplia:zampsdk:1.0.7'
       ...
      }
   ```
@@ -64,8 +64,11 @@ Create Params instance with the below code snippet. Here, you need to pass API-K
 
 
   ```groovy
-    Params mParams = new Params.Builder("API-KEY").setPlatform("Android").
-                            setTransactionId("SESSON-ID").build();
+    Params mParams = new Params.Builder("API-KEY")
+				.setPlatform("Android")
+				.setTransactionId("SESSON-ID")
+				.setUserId("panelId")
+				.build();
   ```
 
 After creating instance of Params to get the offer use the below code snippet : 
