@@ -67,7 +67,7 @@ Create Params instance with the below code snippet. Here, you need to pass API-K
     Params mParams = new Params.Builder("API-KEY")
 				.setPlatform("Android")
 				.setTransactionId("SESSON-ID")
-				.setUserId("panelId")
+				.setUserId("Unique-User-ID")
 				.build();
   ```
 
@@ -89,7 +89,7 @@ We have the following listeners. To use this you have to implement ZampliaCallba
 
 ### Zamplia SDK lifeCycle methods : 
 
-1. If Zamplia SDK is failed while initialization process then this event will receive. Ex.
+1. If Zamplia SDK is failed while the initialization process then this event will receive. Ex.
 
   ```groovy
     public class MainActivity extends AppCompatActivity implements ZampliaCallbacks {
